@@ -1,0 +1,6 @@
+png("plot3.png", width=480, height=480)
+plot(hopoco.2d$Time, hopoco.2d$Sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering")
+lines(hopoco.2d$Time, hopoco.2d$Sub_metering_2, col="red")
+lines(hopoco.2d$Time, hopoco.2d$Sub_metering_3, col="blue")
+legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty=1)
+dev.off()
